@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carrito de Compra</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    #lista-carrito {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    #total {
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Carrito de Compra</h1>
+  </header>
+
+  <main>
+    <section id="productos">
+      <label for="nombreProducto">Nombre del Producto:</label>
+      <input type="text" id="nombreProducto" placeholder="Ingrese el nombre del producto">
+      <br>
+      <label for="precioProducto">Precio del Producto:</label>
+      <input type="number" id="precioProducto" placeholder="Ingrese el precio del producto">
+      <br>
+      <label for="cantidadProducto">Cantidad:</label>
+      <input type="number" id="cantidadProducto" placeholder="Ingrese la cantidad de productos">
+      <br>
+      <button id="agregarProductoBtn">Agregar al Carrito</button>
+    </section>
+
+    <section id="carrito">
+      <h2>Carrito</h2>
+      <ul id="lista-carrito">
+        <!-- Productos del carrito -->
+      </ul>
+      <p id="total">Total: $0</p>
+      <button id="limpiarCarritoBtn">Limpiar Carrito</button>
+    </section>
+  </main>
+
+  <script src="carrito2.js"></script>
+</body>
+</html>
